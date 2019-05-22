@@ -1,0 +1,31 @@
+#menu li{
+			color: red;
+		}
+
+		div > p{
+			color: green;
+		}
+
+		div + p{
+			color: blue;
+		}
+		div ~ p{
+			color: orange;
+		}
+
+		#menu li:nth-child(2){
+			background: gray;
+		}
+
+		#menu li:nth-last-child(3){
+			background: green;
+		}
+
+		#AnhNen{
+			/*background-size: cover; */
+			background-repeat: repeat-x;;
+			width: 600px;
+			height: 400px;
+			background-image: url(http://3.bp.blogspot.com/-a5_9GgeVRfk/UWzKUbHmaII/AAAAAAAAGTw/CienNGs6wgw/s1600/anh-dep-ve-tinh-yeu-30.jpg)
+
+		}
