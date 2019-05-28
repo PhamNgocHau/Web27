@@ -24,7 +24,7 @@ cursor: pointer;
 background-color: #ccc;
 }
 #submenu{
-	display: inline;
+	display: none;
 }
 #menu li:hover #submenu{
 	display: block;

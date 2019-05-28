@@ -118,3 +118,6 @@ body{
 	text-decoration: underline;
 	color: blue;
 }
+.cha:hover .tech-bottom{
+	color: red;
+}

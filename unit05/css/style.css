@@ -1,0 +1,93 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#Header{
+	margin: 0;
+	width: 100%;
+	/*height: 0px;*/
+}
+#color1{
+	padding-top: 10px;
+	width: 100%;
+	/*height: 60px;*/
+	background-color: #bb1919;
+	color: white;
+	/*padding-left: 10%;*/
+}
+#color1>h1{
+	width: 80%;
+	margin: 0 auto;
+}
+#color2{
+	padding-bottom: 15px;
+	padding-top: 20px;
+	/*padding-left: 10%;*/
+	background-color: #a91717;
+	color: white;
+}
+#ads img{
+	width: 100%;
+	margin: 0 auto;
+}
+#menu{
+	width: 80%;
+	margin: 0 auto;
+	/*height: 40px;*/
+}
+#menu li{
+	list-style: none;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid gray;
+}
+#menu li a{
+	color: white;
+	text-decoration: none;
+}
+#Main{
+	width: 80%;
+	margin:0 auto;
+}
+#Ads1{
+	border-bottom: 1px solid #ccc;
+}
+.ads1-left{
+	width: 40%;
+	display: inline-block;
+}
+
+.ads1-right{
+	width: 55%;
+	display: inline-block;
+	
+}
+.ads2-con{
+	color: gray;
+	width: 30%;
+	float:left;
+	padding-left: 1%;
+}
+.ads2-con>img{
+	width:100%;
+}
+
+.text{
+	padding-top: 20px;
+	width: 39%;
+	float: left;
+}
+.date{
+	color: gray;
+}
+.date:hover{
+	color: red;
+}
+.colormulti{
+	color: red;
+}
+.ads4-con{
+	display: inline-block;
+}
+

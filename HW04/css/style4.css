@@ -63,3 +63,6 @@
 #submenu li:hover #menucon{
 	display: block;
 }
+#submenu li:hover #menucon li{
+	color:#ccc;
+}
