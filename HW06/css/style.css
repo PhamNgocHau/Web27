@@ -1,3 +1,7 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
 #header{
 	margin: 0 auto;
 	width: 100%;
@@ -36,7 +40,7 @@
 #content{
 	text-align: center;
 	margin: 0 auto;
-	width: 960px;
+	width: 100%;
 	background-color: #f0f1f3;
 	margin-top:-280px; 
 }
@@ -60,8 +64,8 @@
 }
 .color{
 	color: #46b2a2;
-	margin: 0 auto;
-	padding: 0;
+	/*margin: 0 auto;
+	padding: 0;*/
 	text-align: left;
 }
 #main:hover .color{
@@ -96,7 +100,7 @@
 }
 #img1 img{
 	width: 5%;
-	padding: 1px;
+	padding: 0px;
 	float: left;
 }
 #img2 img{
@@ -105,15 +109,15 @@
 }
 #img3 img{
 	float: left;
-	padding: 1px;
+	padding: 4px;
 	width: 5%;
 }
 #img4 img{
-	padding: 2px;
+	padding: 5px;
 	width: 5%;
 }
 #footer{
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
 }
 #footer h1{
@@ -123,18 +127,21 @@
 	color: gray;
 }
 #footerleft{
-	width: 65%;
+	width: 66%;
 	float: left;
-	padding-left: 40px;
+	padding-left: 50px;
 	margin-top:-20px;
+	height: auto;
 }
 #footerright{
-	width: 90%;
+	width: 30%;
+	height: auto;
+	float: left;
 }
 #form{
-	padding: 30px;
+	padding: 40px;
 	color: white;
-	width: 68%;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #9acbc5;
 	border-style: dotted dashed solid double;
@@ -154,10 +161,20 @@
 	cursor: pointer;
 	border-radius:10px;
 }
-@media screen and (min-width: 481px) and (max-width: 700px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 	#images2{
-		width:40%;
-	}
-	#images3{
 		width: 30%;
 	}
+	#footer{
+		width: 90%;
+	}
+	#footer1{
+
+		width: 75%;
+	}
+}
+@media screen and (max-width: 480px) {
+	#images1{
+		width: 80%;
+	}
+}

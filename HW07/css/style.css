@@ -1,0 +1,146 @@
+#header{
+	width: 100%;
+	height: auto;
+}
+#header .menu{
+	list-style: none;
+}
+.menu a{
+	cursor: pointer;
+	text-decoration: none;
+}
+.menu li{
+	text-shadow: 0px -1px 5px #f33535;
+	padding-left: 7%;
+	display: inline-block;
+}
+#slide img{
+	width: 100%;
+	height: auto;
+}
+#slide p{
+	font-size: 25px;
+	margin: 2%;
+	text-align: center;
+}
+#content{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+}
+.icon{
+	display: inline-block;
+	padding-left: 6%;
+}
+.icon img{
+	padding-left: 40%;
+}
+.icon p{
+	text-align: center;
+}
+#mainfeatures{
+	margin-top:50px;
+	height: auto;
+	text-align: center;
+}
+#mainfeatures strong{
+	font-size: 20px;
+}
+#images{
+	width: 100%;
+	height: auto;
+	margin-bottom: 4%;
+}
+#images img{
+	margin-top:5%;
+	padding-left: 5%;
+	float: left;
+}
+#iconbot{
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+}
+.icon1{
+	float: left;
+}
+.icon1 img{
+	float: left;
+	padding-left: 25%;
+	margin-top: -2%;
+}
+.icon1 p{
+	margin: 8px auto;
+}
+#footer{
+	width: 100%;
+	height: 300px;
+	background-color:#fd502e; 
+}
+#text p{
+	padding-top: 3%;
+	color: white;
+	text-align: center;
+}
+#button{
+	text-align: center;
+}
+#button button{
+	border-radius: 50px;
+	margin: -3px;
+	 padding: 11px;
+	margin-top: 20px;
+}
+#footer1{
+	width: 100%;
+	height: auto;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 8%;
+	padding-bottom: 5%;
+}
+.man div{
+	display: inline-block;
+}
+.man p{
+	padding-left: 10%;
+}
+#footer2{
+	width: 100%;
+	height: 300px;
+	background-color: #292929;
+	color: white;
+	padding-left: 8%;
+	font-size: 20px;
+	margin: 0 auto;
+}
+#multi{
+	width: 30%;
+	float: left;
+}
+#RECENTPOSTS{
+	width: 30%;
+	float: left;
+}
+#RECENTPOSTS p{
+	border-bottom: 0.5px solid white; 
+}
+#contactinfo{
+	width: 30%;
+	float: left;
+}
+#contactinfo p{
+	border-bottom: 0.5px solid white;
+}
+#footer3{
+	width: 100%;
+	height: 60px;
+	background-color: #090909;
+	color: white;
+}
+#footer3 li{
+	line-height: 50px;
+	list-style: none;
+	float: left;
+	padding-left: 8%;
+}
