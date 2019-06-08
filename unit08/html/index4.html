@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+	<script>
+		function ClickEvent(){
+			window.location.href="http://google.com"
+		}
+		function diChuotVao(x){
+			x.style.width='200px';
+			x.style.height='200px';
+			var text = document.getElementById('text');
+			// var text = document.getElementsByClass('text')
+			text.style.color='red';
+		}
+		function diChuotRa(x){
+			x.style.width='100px';
+			x.style.height='100px';
+			var text = document.getElementById('text');
+			text.style.color='black';
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="Click me" onclick="ClickEvent()">
+	<img src="http://nhadepktv.vn/wp-content/uploads/2015/05/mau-nha-dep-1-tang-phong-cach-hien-dai1.jpg" width="100px" height="100px" onmouseover="diChuotVao(this)" onmouseout="diChuotRa(this)">
+	<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, quam?</p>
+</body>
+</html>

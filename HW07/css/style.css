@@ -1,9 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 #header{
 	width: 100%;
 	height: auto;
 }
 #header .menu{
 	list-style: none;
+	display: inline-block;
+	width: 100%;
+	height: auto;
 }
 .menu a{
 	cursor: pointer;
@@ -52,8 +59,6 @@
 	margin-bottom: 4%;
 }
 #images img{
-	margin-top:5%;
-	padding-left: 5%;
 	float: left;
 }
 #iconbot{
@@ -110,23 +115,25 @@
 	height: 300px;
 	background-color: #292929;
 	color: white;
-	padding-left: 8%;
 	font-size: 20px;
 	margin: 0 auto;
 }
 #multi{
-	width: 30%;
+	padding-left: 5%;
+	width: 25%;
 	float: left;
 }
 #RECENTPOSTS{
-	width: 30%;
+	padding-left: 5%;
+	width: 25%;
 	float: left;
 }
 #RECENTPOSTS p{
 	border-bottom: 0.5px solid white; 
 }
 #contactinfo{
-	width: 30%;
+	padding-left: 5%;
+	width: 25%;
 	float: left;
 }
 #contactinfo p{
@@ -143,4 +150,7 @@
 	list-style: none;
 	float: left;
 	padding-left: 8%;
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+
 }
