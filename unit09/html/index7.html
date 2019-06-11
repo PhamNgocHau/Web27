@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vd5</title>
+</head>
+<body>
+	<h1>Thẻ h1</h1>
+	<p>Thẻ p thứ 1</p>
+	<p>Thẻ p thứ 2</p>
+	<input type="button" value="Click me" onclick="myfunction()">
+	<script type="text/javascript">
+		function myfunction(){
+			var h1 = document.getElementsByTagName('h1')[0];
+			h1.parentNode.style.background = 'red';
+			var p = document.getElementsByTagName('p')[0];
+			p.nextElementSibling.style.color = 'blue';
+			var p = document.getElementsByTagName('p')[1];
+			p.previousElementSibling.style.color = 'yellow';
+		}
+	</script>
+</body>
+</html>

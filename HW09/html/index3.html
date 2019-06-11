@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bài 3</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{ 
+			width: 500px;
+			height: 500px;
+			margin:50px; 
+		}
+		#main{
+			width: 400px;
+			height: 100px;
+			border: 1px solid ;
+			font-size: 20px;
+		}
+		.ad1{
+			margin : 20px;
+		}
+		#content{
+			margin:10px;
+		}
+	</style>
+	<script type="text/javascript">
+		function click1(){
+			var text = document.getElementById('content1');
+			text.style.fontSize='20px';
+			var text = document.getElementById('content')
+			text.style.fontSize='20px';
+		}
+		function click2(){
+			var text = document.getElementById('content1');
+			text.style.fontSize='30px';
+			var text = document.getElementById('content')
+			text.style.fontSize='30px';
+		}
+		function click3(){
+			var text = document.getElementById('content1');
+			text.style.fontSize='10px';
+			var text = document.getElementById('content')
+			text.style.fontSize='10px';
+		}
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div id="content">
+			<p>Cỡ chữ</p>
+		</div>
+		<input class="ad1" type="button" name="" value="Mặc Định" onclick="click1()">
+		<input class="ad1" type="button" name="" value="Lớn" onclick="click2()">
+		<input class="ad1" type="button" name="" value="Nhỏ" onclick="click3()">
+	</div>
+	<div id="content1">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores architecto rem labore iusto, accusamus culpa atque at aperiam a assumenda beatae facere hic sit placeat harum, laudantium magnam dignissimos natus!
+		</p> 
+	</div>
+
+</body>
+</html>

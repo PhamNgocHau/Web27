@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bài 1</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#content{
+			width: 600px;
+			height: 200px;
+			background-image: url(../images/anh1.jpg);
+			background-image: cover;
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+		#buttontab input{
+			color: white;
+			background-color: gray;
+		}
+		#buttontab:hover input{
+			color: black;
+			cursor: pointer;
+			background-color: white;
+		}
+		#textbox{
+			width: 550px;
+			height:auto;
+			display: none;
+			background: white;
+			border-radius: 10px;
+		}
+		#textbox:hover h2{
+			cursor: pointer;
+			font-size: 30px;
+		}
+		#textbox:hover p{
+			font-size: 23px;
+		}
+		#textbox2{
+			width: 550px;
+			height: auto;
+			display: none;
+			background: white;
+			border-radius: 10px;
+		}
+		#textbox2:hover h2{
+			cursor: pointer;
+			font-size: 30px;
+		}
+		#textbox2:hover p{
+			font-size: 23px;
+		}
+		#textbox3{
+			width: 550px;
+			height: auto;
+			display: none;
+			background: white;
+			border-radius: 10px;
+		}
+		#textbox3:hover h2{
+			cursor: pointer;
+			font-size: 30px;
+		}
+		#textbox3:hover p{
+			font-size: 23px;
+		}
+	</style>
+	<script type="text/javascript">
+		function clicktab1(){
+			var text_box = document.getElementById('textbox2')
+			text_box.style.display = 'none';
+			var text_box = document.getElementById('textbox3')
+			text_box.style.display = 'none';
+			var text_box = document.getElementById('textbox')
+			text_box.style.display = 'inline-block';
+		}
+		function clicktab2(){
+			var text_box = document.getElementById('textbox2')
+			text_box.style.display = 'inline-block';
+			var text_box = document.getElementById('textbox3')
+			text_box.style.display = 'none';
+			var text_box = document.getElementById('textbox')
+			text_box.style.display = 'none';
+		}
+		function clicktab3(){
+			var text_box = document.getElementById('textbox2')
+			text_box.style.display = 'none';
+			var text_box = document.getElementById('textbox3')
+			text_box.style.display = 'inline-block';
+			var text_box = document.getElementById('textbox')
+			text_box.style.display = 'none';
+		}
+	</script>
+</head>
+<body>
+	<div id="content">
+		<div id="buttontab">
+		<input type="button" value="Tab 1" onclick="clicktab1()">
+		<input type="button" value="Tab 2" onclick="clicktab2()">
+		<input type="button" value="Tab 3" onclick="clicktab3()">
+	</div>
+
+	<div id="textbox">
+		<h2>Section 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+
+	<div id="textbox2">
+		<h2>Section 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+
+	<div id="textbox3">
+		<h2>Section 3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi architecto animi, officiis voluptas distinctio debitis corporis earum odit nulla, quia!</p>
+	</div>
+
+	</div>
+</body>
+</html>

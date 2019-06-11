@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vd2</title>
+</head>
+<body>
+	<input type="button" value="Click me" onclick="change()">
+	<script type="text/javascript">
+		function change(){
+			var input = document.getElementsByTagName('input')
+			var type = input[0].type;
+			if (type == "button"){
+				input[0].type = "text";
+			}
+			else{
+				input[0].type = "button";
+			}
+		}
+	</script>
+</body>
+</html>
