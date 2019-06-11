@@ -19,7 +19,7 @@
 			margin: 0;
 			padding-left: 15px;
 		}
-		
+
 		#table input{
 			width: 30px;
 		}
@@ -27,11 +27,25 @@
 			margin: 50px;
 		}
 	</style>
+	
+	<script type="text/javascript">
+		function checkall(){
+			for (var i = 0; i < document.querySelectorAll('input').length; i++) {
+				document.querySelectorAll('input')[i].checked = true;
+			}
+		}
+		function uncheckall(){
+			for (var i = 0; i < document.querySelectorAll('input').length; i++) {
+				document.querySelectorAll('input')[i].checked = false;
+			}
+		}
+		function 
+	</script>
 </head>
 <body>
 	<table id="table">
 		<tr>
-			<td><input type="checkbox" name=""></td>
+			<td><input type="checkbox" name="" onclick="changecolor()"></td>
 			<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. consecteturconsectetur</td>
 		</tr>
 		<tr>
@@ -64,8 +78,8 @@
 		</tr>
 	</table>
 	<div id='bot'>
-		<a href="" onclick="clickall">Check all</a>
-		<a href="" onclick="clickun">Uncheck all</a>
+		<a href="#" onclick="checkall()">Check all</a>
+		<a href="#" onclick="uncheckall()">Uncheck all</a>
 	</div>
 </body>
 </html>
