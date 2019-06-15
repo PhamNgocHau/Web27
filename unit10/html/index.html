@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<style type="text/css">
+		body{
+			width:1000px;
+			height:auto;
+			background: url(../images/white-background-stars.jpg);
+			background-size: cover;
+		}
+		.fr{
+			width: 800px;
+			height: 320px;
+			border: 2px solid gray;
+			border-radius: 20px;
+			margin-left: 25%;
+			margin-top: 10%; 
+		}
+		.text{
+			width: 200px;
+			display: inline-block;
+			margin-top: 30px; 
+		}
+		.input{
+			width: 350px;
+			display: inline-block;
+		}
+		.input input{
+			width: 300px;
+		}
+		.err{
+			width: 200px;
+			display: inline-block;
+		}
+		#radio{
+			display: inline-block;
+		}
+		.fr button{
+			cursor: pointer;
+			background-color: #f53a3a;
+			color: white; 
+			margin: 50px;
+			margin-left: 180px;: 
+		}
+	</style>
+</head>
+<body>
+	<form class="fr">
+		<div>
+			<div class='text'>Họ và Tên</div>
+			<div class="input"><input type="text" placeholder="Nhập họ và tên..."  id="name"></div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+
+		<div>
+			<div class='text' id='female'>Giới Tính</div>
+			<div id=radio>
+				<input type="radio" name="rd" onclick="rd()">Nam
+				<input type="radio">Nữ
+			</div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+
+		<div>
+			<div class='text' id='email'>Email</div>
+			<div class="input"><input type="text" placeholder="Nhập Email..."></div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+
+		<div>
+			<div class='text' id='phone'>Số điện thoại</div>
+			<div class="input"><input type="text" placeholder="Nhập số điện thoại..."></div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+
+		<div>
+			<div class='text' id='password'>Mật Khẩu</div>
+			<div class="input"><input type="password"></div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+
+		<div>
+			<div class='text' id='cf_password'>Xác nhận mật khẩu</div>
+			<div class="input"><input type="password"></div>
+			<div class='err'>
+				<span class="errors"></span>
+			</div>
+		</div>
+		<button type="button">Đăng Ký</button>
+		<button type="button">Thoát</button>
+	</form>
+	<script type="text/javascript">
+		var button_register = document.getElementsByTagName('button')[0];
+		button_register.addEventListener('click', function(){
+			var name = document.getElementById('name').value;
+			var female = document.getElementById('female').value;
+			var email = document.getElementById('email').value;
+			var phonenumber = document.getElementById('phone').value;
+			var password = document.getElementById('password').value;
+			var cf_password = document.getElementById('cf_password').value;
+			var errors = document.getElementsByClassName('errors');
+			if (name.length<=5){
+				errors[0].innerHTML = 'Yêu cầu nhập đầy đủ họ tên';
+			}else {
+				errors[0].innerHTML = "";
+			}
+		});
+	</script>
+</body>
+</html>
