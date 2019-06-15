@@ -44,6 +44,9 @@
 			margin: 50px;
 			margin-left: 180px;: 
 		}
+		.errors{
+			color: red;
+		}
 	</style>
 </head>
 <body>
@@ -68,54 +71,85 @@
 		</div>
 
 		<div>
-			<div class='text' id='email'>Email</div>
-			<div class="input"><input type="text" placeholder="Nhập Email..."></div>
+			<div class='text'>Email</div>
+			<div class="input"><input type="text" placeholder="Nhập Email..." id='email'></div>
 			<div class='err'>
 				<span class="errors"></span>
 			</div>
 		</div>
 
 		<div>
-			<div class='text' id='phone'>Số điện thoại</div>
-			<div class="input"><input type="text" placeholder="Nhập số điện thoại..."></div>
+			<div class='text'>Số điện thoại</div>
+			<div class="input"><input type="text" placeholder="Nhập số điện thoại..."  id='phone'></div>
 			<div class='err'>
 				<span class="errors"></span>
 			</div>
 		</div>
 
 		<div>
-			<div class='text' id='password'>Mật Khẩu</div>
-			<div class="input"><input type="password"></div>
+			<div class='text'>Mật Khẩu</div>
+			<div class="input"><input type="password"  id='password'></div>
 			<div class='err'>
 				<span class="errors"></span>
 			</div>
 		</div>
 
 		<div>
-			<div class='text' id='cf_password'>Xác nhận mật khẩu</div>
-			<div class="input"><input type="password"></div>
+			<div class='text'>Xác nhận mật khẩu</div>
+			<div class="input"><input type="password"  id='cf_password'></div>
 			<div class='err'>
 				<span class="errors"></span>
 			</div>
 		</div>
 		<button type="button">Đăng Ký</button>
-		<button type="button">Thoát</button>
+		<button type="button">Xóa Trắng</button>
 	</form>
 	<script type="text/javascript">
 		var button_register = document.getElementsByTagName('button')[0];
 		button_register.addEventListener('click', function(){
-			var name = document.getElementById('name').value;
+			var re =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			var re_phone = /^0(1\d{9}|9\d{8})$/;
+ 			var name = document.getElementById('name').value;
 			var female = document.getElementById('female').value;
 			var email = document.getElementById('email').value;
 			var phonenumber = document.getElementById('phone').value;
 			var password = document.getElementById('password').value;
 			var cf_password = document.getElementById('cf_password').value;
 			var errors = document.getElementsByClassName('errors');
-			if (name.length<=5){
+			if(name.length<=5){
 				errors[0].innerHTML = 'Yêu cầu nhập đầy đủ họ tên';
-			}else {
+			}else{
 				errors[0].innerHTML = "";
 			}
+			if(!re.test(email)){
+				errors[2].innerHTML = "Email không đúng định dạng";
+			}else{
+				errors[2].innerHTML = "";
+			}
+			if(phonenumber.length<=5){
+				errors[3].innerHTML = 'Yêu cầu nhập số điện thoại';
+			}else{
+				errors[3].innerHTML = "";
+			}
+			if(password.length<=5){
+				errors[4].innerHTML = 'Mật Khẩu Chưa An Toàn';
+			}else{
+				errors[4].innerHTML = "";
+			}
+			if(cf_password.length<=5){
+				errors[5].innerHTML = 'Yêu cầu xác nhận mật khẩu';
+			}else{
+				errors[5].innerHTML = "";
+			}
+		});
+		var button_del = document.getElementsByTagName('button')[1];
+		button_del.addEventListener('click', function(){
+			document.getElementById('name').value="";
+			document.getElementById('email').value="";
+			document.getElementById('phone').value="";
+			document.getElementById('password').value="";
+			document.getElementById('cf_password').value="";
+			document.getElementById('rd1').value="";
 		});
 	</script>
 </body>
