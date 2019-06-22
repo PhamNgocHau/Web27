@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p id="the_p">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorum?
+	</p>
+	<div id="the_div">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, voluptatibus.
+	</div>
+	<input id="input" type="text" value="hello">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('#the_p').css("color",'red');
+			// alert($("#the_p").html());
+			// alert($("#input").val());
+			// $('#the_p').css({'color':'red', 'background-color':'yellow','font-size':'20px'});
+			// console.log($('#the_p').html());
+			$('#the_div').css('background', 'red');
+			$('#the_div').width('500');
+			// $('#the_div').height('300');
+			console.log($('#the_div').height());
+			$('#the_div').empty();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery 2</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<ul id='location'>
+		<li>Hà Nội</li>
+		<li>Hải Dương</li>
+		<li>Hải Phòng</li>
+	</ul>
+	<script type="text/javascript">
+		$('#location').prepend('<li>Hồ Chí Minh</li>');
+		$('#location').append('<li>Nghệ An</li>');
+		$('#location').before('<p>Hello</p>');
+		$('#location').after('<p>Are You OK!</p>');
+		$('#location').css('background-color','red');
+		$('#location').css('color','white');
+		$('#location').css('cursor','pointer');
+	</script>
+</body>
+</html>

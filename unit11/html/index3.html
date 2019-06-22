@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery3</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.color-red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, incidunt!</p>
+	<input type="button" value="Add Class" id="add">
+	<input type="button" value="Remove Class" id='remove'>
+	<input type="button" value="Toggle Class" id='toggle'>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#add').click(function(){
+				$('p').addClass('color-red');
+			})
+			$('#remove').click(function(){
+				$('p').removeClass('color-red');
+			})
+			$('#toggle').click(function(){
+				$('p').toggleClass('color-red');	//2 cách viết giống nhau chức năng
+			})
+			// $('#toggle').on('click',function(){
+			// 	$('p').toggleClass('color-red');	//2 cách viết giống nhau chức nắng
+			// })
+		});
+	</script>
+</body>
+</html>

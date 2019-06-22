@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>	
+</head>
+<body>
+	<div id='header'>
+		<ul>
+			<li>
+				<a href="" id='homepage'>Homepage</a>
+				<p>variations</p>
+			</li>
+			<li>
+				<a href="">Posts
+				<p>layouts</p>
+			</li>
+			<li>
+				<a href="">Post views
+				<p>available</p>
+			</li>
+			<li>
+				<a href="">Category
+				<p>mega menu</p>
+			</li>
+			<li>
+				<a href="">Shop
+				<p>details</p>
+			</li>
+			<li>
+				<a href="">Page
+				<p>available</p>
+			</li>
+		</ul>
+	</div>
+	<div id='header-bot'>
+		<div>
+			<div id='slide-shadow'>
+				<img src="../images/anh16.jpg" class='img-slide'>
+				<img src="../images/anh15.jpg" class='img-slide'>
+				<img src="../images/anh13.jpg" class='img-slide'>
+				<img src="../images/anh18.jpg" class='img-slide'>
+			</div>
+			<div class="conveyor-btn">
+				<button class="button-element" onclick="elementSlide(0)"></button>
+				<button class="button-element" onclick="elementSlide(1)"></button>
+				<button class="button-element" onclick="elementSlide(2)"></button>
+				<button class="button-element" onclick="elementSlide(3)"></button>
+			</div>
+			<div id='icons'>
+				<img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Arrow-Back-2-icon.png" id="prev">
+				<img src="http://www.iconarchive.com/download/i95457/iconsmind/outline/Arrow-Next.ico" id="next">
+			</div>
+			<div id='text'>
+				<span>
+					<button type="button">Storis</button>
+					<button type="button">Travel</button>
+				</span>
+				<div>
+					<h1>There's no place I Like</h1>
+				</div>
+				<div id='February'>
+					February 06,2015 by stefan Ciorici
+				</div>
+				<div id='text-bot'>
+					<div class='number'>
+						<p>01</p>
+					</div>
+					<div class='text1'>
+						<p>Get it off your mind</p>
+						<p>February 06,2015</p>
+					</div>
+				</div>
+				<div id='text-bot2'>
+					<div class='number'>
+						<p>02</p>
+					</div>
+					<div class='text1'>
+						<p>There's no place I Like</p>
+						<p>February 06,2015</p>
+					</div>
+				</div>
+				<div id='text-bot2'>
+					<div class='number'>
+						<p>03</p>
+					</div>
+					<div class='text1'>
+						<p>No way I am doing this</p>
+						<p>February 06,2015</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+		</div>
+	</div>
+	<div id='content'>
+		
+	</div>
+	<div id='footer'>
+		
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			${"#icons"}.mouseover(function(){
+				${'#prev'}.style.display = 'block';
+				${'#next'}.style.display = 'block';
+			})
+			${"#icons"}.mouseout(function(){
+				${'#prev'}.style.display = 'none';
+				${'#next'}.style.display = 'none';
+			})
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body{
+			background-image: url("background.jpg");
+			background-size: cover;
+			color: white;
+		}
+		h1{
+			font-family: Forte;
+		}
+		.div{
+			width: 100%;
+			height: 70px;
+			background-color: #181D16;
+			border: 1px solid black;
+		}
+		.img{
+			width: 40px;
+			height: 40px;
+			border-radius: 7px;
+			float: left;
+			margin-left: -20px;
+			margin-top: 15px;
+			background-color: #5C8E1A;
+		}
+		.fa{
+			color: #76B721;
+			font-size: 40px;
+		}
+		.txt{
+			width: 80%;
+			float: left;
+			padding-top: 25px;
+			padding-left: 5%;
+			font-size: 20px;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+		.extend{
+			display: block;
+			height: 180px;
+			width: 100%;
+			background-color: #2E392C;
+			border: 1px solid black;
+		}
+		.divopen{
+			display: none;
+			height: 150px;
+			width: 100%;
+			background-color: #2C312C;
+			margin-top: 0;
+			padding-top: 10px;
+			/*border: 1px solid black;*/
+		}
+	</style>
+</head>
+<body>
+	<center>
+	<div style="width: 60%; text-align: left;">
+		<h1>This is a logo</h1>
+	</div>
+	<div style="width: 60%; text-align: center;">
+		<div class="div div1">
+			<div class="panel">
+				<div class="img">
+					<i class="fa fa-plus-square" aria-hidden="true"></i>
+					<!-- <i class="fa fa-minus-square" aria-hidden="true"></i> -->
+				</div>
+				<div class="txt">First Panel</div>
+			</div>
+		</div>
+		<div class="divopen">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel.</p>
+		</div>
+
+
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa fa-plus-square" aria-hidden="true"></i>
+					<!-- <i class="fa fa-minus-square" aria-hidden="true"></i> -->
+				</div>
+				<div class="txt">Second Panel</div>
+			</div>
+		</div>
+		<div class="divopen" >
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, suscipit.</p>
+		</div>
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa fa-plus-square" aria-hidden="true"></i>
+					<!-- <i class="fa fa-minus-square" aria-hidden="true"></i> -->
+				</div>
+				<div class="txt">Third Panel</div>
+			</div>
+		</div>
+		<div class="divopen" id="div3open">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel.</p>
+		</div>
+
+
+
+		<div class="div">
+			<div class="panel">
+				<div class="img">
+					<i class="fa fa-plus-square" aria-hidden="true"></i>
+					
+				</div>
+				<div class="txt">Fourth Panel</div>
+			</div>
+
+		</div>
+		<div class="divopen" >
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem reprehenderit, quaerat qui sapiente laboriosam, iure nobis. Commodi illum, aliquam ex ea cum labore, architecto explicabo, ratione quas tempore similique vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus possimus consequatur nulla dolorem maxime mollitia, dolor quae ratione ipsum perspiciatis esse amet aliquam, eveniet labore ducimus sint harum! Repudiandae quisquam ipsum reprehenderit laborum et inventore, sed est, voluptas natus culpa labore iste illum doloribus neque dolor autem ut deserunt omnis?</p>
+		</div>
+	</div>
+	</center>
+
+	<script type="text/javascript">
+		$(function(){
+			$('.img').click(function(){
+				if ($(this).html() == '<i class="fa fa-plus-square"></i>') {
+					$('.img').html('<i class="fa fa-plus-square"></i>');
+					$('.divopen').css({'display': 'none'});
+					$(this).html('<i class="fa fa-minus-square"></i>');
+					$(this).parent().parent().next().show(500);
+				} else{
+					$(this).html('<i class="fa fa-plus-square"></i>');
+					$(this).parent().parent().next().hide(500);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
