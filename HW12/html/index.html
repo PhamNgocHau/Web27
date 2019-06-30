@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex01</title>
+  
+    <style type="text/css">
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        #header{
+            width: 1250px;
+            height: 80px;
+            background-color: #2184be;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar #jquery{
+            float: left;
+            list-style: none;
+            margin: 0;
+            font-size: 25px;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            padding: 25px;
+            margin-top: 10px;
+            font-family: initial;
+        }
+        .navbar #color{
+            color: #ff7f00;
+        }
+        #color1 span{
+            color: white;
+            border: 3px solid #b94a48;
+            background-color: #b94a48;
+        }
+        #content{
+            width: 1400px;
+            height: auto;
+        }
+        #menu-left a{
+            text-decoration: none;
+            color: #2184be;
+        }
+        #menu-left li{
+            margin:20px;
+            list-style: none;
+            font-size: 18px;
+        }
+        #menu-left{
+            margin: 50px; 
+            background-color: #eee;
+            width: 300px;
+            height: 360px;
+            border: 1px solid #eee;
+            float: left;
+        }
+        #menu-left:hover #advanced-form{
+            background-color: #2184be;
+            color: white;
+        }
+        #menu-right{
+            width: 1000px;
+            height: auto;
+            /*display: none;*/
+        }
+        #menu-right-top{
+            width: 1000px;
+            height: auto;
+            display: none;
+        }
+        #menu-right a{
+            display: inline-block;
+            width: 170px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #eee;
+            padding-left:20px;
+            border: 1px solid;
+            text-decoration: none;
+            color: gray;
+            font-size: 20px;
+            line-height: 50px;
+        }
+        #menu-right li{
+            margin-top:70px;
+            list-style: none;
+        }
+        #account{
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+        }
+        #profile{
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+        }
+        #warning{
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+        }
+        #finish{
+            width: 180px;
+            height: 50px;
+            display: inline-block;
+        }
+        #menu-right-bot{
+            width: 1000px;
+            height: auto;
+        }
+        #menu-right-bot input{
+            width: 200px;
+            height: 25px;
+            border-radius: 2px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        #fieldset1{
+            height: 350px;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-top:20px;
+            background-color: #eee;
+            display: none;
+        }
+        #fieldset2{
+            height: 400px;
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-top:20px;
+            background-color: #eee;
+            display: none;
+        }
+        #fieldset3{
+            height: 300px;
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color: #eee;
+            color: red;
+            display: none;
+        }
+        #fieldset4{
+            height: 350px;
+            background-color: #eee;
+            margin: 20px;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-size: 18px;
+            display: none;
+        }
+        .red{
+            color: red;
+        }
+        #fieldset4 input{
+            width: 50px;
+            margin: 0;
+        }
+        #btn{
+            margin: 30px;
+            width:1000px;
+            padding-left: 770px;
+            display: none;
+        }
+        #btn button{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            color: white;
+            background-color:#2184be; 
+        }
+    </style>
+</head>
+<body>
+    <div id='header'>
+        <div class='navbar'>
+            <ul>
+                <li id='jquery'><a href="">JQuery Steps</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">Blog</a></li>
+                <li id='color1'>
+                    <a href="">Bootgrid</a>
+                    <span>New</span>
+                </li>
+                <li><a href="">Documentation</a></li>
+                <li><a href=""  id='color'>Examples</a></li>
+                <li><a href="">Getting Started</a></li>
+            </ul>
+            <div style="clear: both;"></div>
+        </div>  
+    </div>
+    <div id='content'>
+        <div id='menu-left'>
+             <ul>
+                <li><a href="">Basic Example</a></li>
+                <li><a href="">Basic Form</a></li>
+                <li><a id="advanced-form" href="#">Advanced Form Exmple</a></li>
+                <li><a href="">Dynamic Manipulation Example</a></li>
+                <li><a href="">Tabs Exmple</a></li>
+                <li><a href="">Vertical Steps Example</a></li>
+                <li><a href="">Async Content Loading Example</a></li>
+                <li><a href="">Enbedded Content Example</a></li>
+             </ul>
+        </div>
+        <div id='menu-right'>
+            <div id="menu-right-top">
+                <ul>
+                    <li id="account"><a href="" id='task1'>1.Account</a></li>
+                    <li id="profile"><a href="" id='task2'>2.Profile</a></li>
+                    <li id="warning"><a href="" id='task3'>3.Warning</a></li>
+                    <li id="finish"><a href=""  id='task4'>4.Finish</a></li>
+                </ul>
+            </div>
+            <div id='menu-right-bot'>
+                <div>
+                    <form id="example-advanced-form" action="#">
+                        <fieldset id="fieldset1">
+                                <h3>Account Information</h3>
+                            <div>
+                                <label>User Name<span class="red">(*)</span></label><br>
+                                <input type="text" name="ho" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div>
+                                <label>Password<span class="red">(*)</span></label><br>
+                                <input type="text" name="password" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div>
+                                <label>Confirm Password<span class="red">(*)</span></label><br>
+                                <input type="text" name="confirmpassword" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div>
+                                <label><span class="red">(*)</span>Mandatory</label><br>
+                            </div>
+                            
+                        </fieldset>
+                   
+                        <fieldset id="fieldset2">
+                                <h3>Profile Information</h3>
+                            <div>
+                                <label>Firt name<span class="red">(*)</span></label><br>
+                                <input type="text" name="firtname" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div>
+                                <label>Last name<span class="red">(*)</span></label><br>
+                                <input type="text" name="lastname" placeholder="Vui lòng nhập họ tên">
+                            </div>
+                            <div>
+                                <label>Email<span class="red">(*)</span></label><br>
+                                <input type="text" name="email" placeholder="Vui lòng nhập email">
+                            </div>
+                            <div>
+                                <label>Address<span class="red">(*)</span></label><br>
+                                <input type="text" name="address" placeholder="Vui lòng nhập địa chỉ">
+                            </div>
+                            <div>
+                                <label>Age(The Warning step will show up if age is less than 18)<span class="red">(*)</span></label><br>
+                                <input type="text" name="age" placeholder="Vui lòng nhập tuổi">
+                            </div>
+                            <div>
+                                <label><span class="red">(*)</span>Mandatory</label><br>
+                            </div>
+                        </fieldset>
+             
+                        <fieldset id="fieldset3">
+                            <legend>wanted</legend>
+                            <p>Please go away ;-)</p>
+                        </fieldset>
+
+                        <fieldset id="fieldset4">
+                            <span style="color: red">
+                                This field is required<span><input type="checkbox" name="">I agree with the Tems </span>
+                            </span>
+                        </fieldset>
+                      
+                        <div id='btn'>
+                            <button type="button" id='btn1'>Previous</button>
+                            <button type="submit" id='btn2'>Finish</button>
+                        </div>
+                    <!-- </fieldset> -->
+                    </form>
+ 
+                </div>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="../Js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../Js/jquery.validate.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var index
+                $('#advanced-form').click(function(){
+                    $('#menu-right-top').show();
+                    $('#fieldset1').show();
+                    $('#btn').show();
+                });
+                
+                $('#btn2').click(function(e){
+                    $('#example-advanced-form').validate({
+                    rules: {
+                        ho:"required",
+                        password:"required",
+                        confirmpassword:{
+                            required:true,
+                            minlength:6
+                        },
+
+                    },
+                    messages: {
+                        ho:"Vui lòng nhập họ tên",
+                        password:"Vui lòng nhập password",
+                        confirmpassword: {
+                            required:"Vui Lòng nhập lại mật khẩu",
+                            minlength:"Mật khẩu quá ngắn"
+                        }
+                    }
+                    });
+
+                    if ($('#example-advanced-form').valid()) {
+                        e.preventDefault();
+                        //chuyen tab
+                        $('#fieldset1').hide()
+                        $('#fieldset2').show()
+                    }
+                })
+            })
+
+        </script>
+
+</body>
+</html>

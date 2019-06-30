@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vd3</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div style="width:100px;height: 100px;background-color: yellow"></div>
+	<div style="width:100px;height: 100px;background-color: blue"></div>
+	<div style="width:100px;height: 100px;background-color: red"></div>
+	<button id='hide'>Hide</button>
+	<button id='show'>Show</button>
+	<button id='toggle'>Toggle</button>
+	<button id='fadein'>FedeIn</button>
+	<button id='fadeout'>FedeOut</button>
+	<button id='fadetoggle'>FedeToggle</button>
+	<button id='fadeTo'>FedeTo</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#hide').click(function(){
+				$('div').hide(3000);
+			})
+			$('#show').click(function(){
+				$('div').show(3000);
+			})
+			$('#toggle').click(function(){
+				$('div').toggle();
+			})
+			$('#fadeout').click(function(){
+				$('div').fadeOut();
+			})
+			$('#fadein').click(function(){
+				$('div').fadeIn();
+			})
+			$('#fadetoggle').click(function(){
+				$('div').fadeToggle(5000);
+			})
+			$('#fadeTo').click(function(){
+				$('div').fadeTo('slow',0.5);
+			})
+		});
+	</script>
+</body>
+</html>

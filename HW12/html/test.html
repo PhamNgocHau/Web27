@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lightbox vd2</title>
+	<link rel="stylesheet" type="text/css" href="../css/imagelightbox.min.css">
+	<style type="text/css">
+		img{
+			width: 330px;
+			height: 200px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<a href="../images/Hinh-anh-sieu-xe-lamborghini-4.jpg"  data-imagelightbox="img" data-title="Optional caption">
+		<img src="../images/Hinh-anh-sieu-xe-lamborghini-4.jpg" alt="">
+	</a>
+	<a href="../images/sieu-xe-ModBall-Rally-2016-20.jpg" data-imagelightbox="img" data-title="Optional caption">
+		<img src="../images/sieu-xe-ModBall-Rally-2016-20.jpg">
+	</a>
+	<a href="../images/1524417.jpg" data-imagelightbox="img" data-title="Optional caption">
+		<img src="../images/1524417.jpg">
+	</a>
+	<a href="../images/sieu-xe-ModBall-Rally-2016-41.jpg" data-imagelightbox="img" data-title="Optional caption">
+		<img src="../images/sieu-xe-ModBall-Rally-2016-41.jpg">
+	</a>
+
+	<script type="text/javascript" src="../Js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../Js/imagelightbox.min.js"></script>
+	<script type="text/javascript">
+		$('a[data-imagelightbox="img"]').imageLightbox();
+	</script>
+</body>
+</html>

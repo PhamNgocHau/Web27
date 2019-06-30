@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vd4</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia expedita eius dolores ipsa, animi deleniti ratione doloremque itaque quos saepe?</p>
+	<button id='slideUp'>SlideUp</button>
+	<button id='slideDown'>SlideDown</button>
+	<button id='slideToggle'>SlideToogle</button>
+	<button id='slideToggle'>SlideTop</button>
+	<button id='slideStop'>Stop</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#slideUp').click(function(){
+				$('p').slideUp();
+			})
+			$('#slideDown').click(function(){
+				$('p').slideDown();
+			})
+			$('#slideToggle').click(function(){
+				$('p').slideToggle();
+			})
+		})
+	</script>
+</body>
+</html>

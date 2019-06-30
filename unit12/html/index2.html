@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vd2</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.siblingss *{
+			border: 3px solid;
+			padding: 30px;
+			margin: 30px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $('h2').next().css('border-color','red');
+			// $('h2').nextAll().css('border-color','red');
+			// $('h2').nextUntil('h5').css('border-color','red');
+			// $('h2').prev().css('border-color','red');
+			// $('h2').siblings().css('border-color','red');
+			// $('h2').siblings('h1').css('border-color','red');
+			
+			// $('div').first().css('background','red');
+			$('div').last().css('background','red');
+			// $('div').eq(1).css('background','red');
+			// $('div').filter('.test').css('background','yellow');
+			// $('div').not('.test').css('background','yellow');
+		});
+	</script>
+</head>
+<body class="siblingss">
+	<div>parent
+		<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+		<h5>5</h5>
+	</div>
+	<div class='test'>parent
+		<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+		<h5>5</h5>
+	</div>
+	<div class='test'>parent
+		<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+		<h5>5</h5>
+	</div>
+	<div>parent
+		<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+		<h5>5</h5>
+	</div>
+</body>
+</html>
