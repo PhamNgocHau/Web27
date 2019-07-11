@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+		<a class="navbar-brand col-md-6" href="#" id="MulTi"><span id="multi">M</span><span>ulti</span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active col-md-3" href="../page/index.html" id="home">HOME</a>
+				<a class="nav-item nav-link col-md-4" href="../page/services.html" id="services">SERVICES</a>
+				<a class="nav-item nav-link col-md-3" href="../page/blog.html" id="blog">BLOG</a>
+				<a class="nav-item nav-link col-md-4" href="../page/portfolio.html" id="port">PORTFOLIO</a>
+				<a class="nav-item nav-link disabled col-md-3" href="#" tabindex="-1" aria-disabled="true" id="contact">CONTACT</a>
+			</div>
+		</div>
+	</nav>
+	<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1" id="text-portfolio">
+				<h3>Portfolio</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates veniam aspernatur consectetur</p>
+			</div>
+			<div id="buttons"></div>
+			<div id="gallery" class="col-md-12">
+				<img data-tags="Animators,Illustrators" src="../images/portfolio/full/item1.png" alt="" />
+				<img data-tags="Photographers,Filmmakers" src="../images/portfolio/full/item2.png" alt="" />
+				<img data-tags="Photographers,Filmmakers" src="../images/portfolio/full/item3.png" alt="" />
+				<img data-tags="Designers" src="../images/portfolio/full/item4.png" alt="" />
+				<img data-tags="Filmmakers" src="../images/portfolio/full/item5.png" alt="" />
+				<img data-tags="Designers" src="../images/portfolio/full/item6.png" alt="" />
+				<img data-tags="Animators,Photographers" src="../images/portfolio/full/item7.png" alt="" />
+				<img data-tags="Designers" src="../images/portfolio/full/item8.png" alt="" />
+			</div>
+		</div>			
+	</div>
+	<div class="row" id=footer>
+		<div class="col-md-5" id="footer-multi">
+			<h5>Multi</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt harum pariatur totam recusandae blanditiis doloremque repudiandae maiores ad dignissimos, cum, veritatis cumque, aspernatur illo amet maxime doloribus mollitia inventore itaque!
+			</p>
+			<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-weibo" aria-hidden="true"></i>
+			<i class="fa fa-google-plus" aria-hidden="true"></i>
+		</div>
+		<div class="col-md-3" id="footer-recent">
+			<h5>RECENT POST</h5>
+			<p>Awesome Design with Overiviews</p>
+			<hr>
+			<p>Great Design with Features</p>
+			<hr>
+			<p>Limitless functions & Work</p>
+			<hr>
+			<p>Multi is simple and clean Design</p>
+		</div>
+		<div class="col-md-3" id="footer-contact">
+			<h5>CONTACT INFO</h5>
+			<p>
+				<i class="fa fa-home" aria-hidden="true"></i> Office #38, Suite 54 Elizebth Street, Victoria State Newyork, USA 33026
+			</p>
+			<hr>
+			<p>
+				<i class="fa fa-phone" aria-hidden="true"></i> +38 000 129900
+			</p>
+			<hr>
+			<p>
+				<i class="fa fa-envelope-o" aria-hidden="true"></i> info@domain.net
+			</p>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light" id="footer-bot">
+		<a class="navbar-brand col-md-6" href="#" id="Reserved"><i class="fa fa-at" aria-hidden="true"> 2015 bootstraplaste. All Rights Reserved</i></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active col-md-3" href="#" id="home-bot">Home</a>
+				<a class="nav-item nav-link col-md-4" href="#" id="services-bot">Services</a>
+				<a class="nav-item nav-link col-md-3" href="#" id="blog-bot">Blog</a>
+				<a class="nav-item nav-link col-md-4" href="#" id="port-bot">Portfolio</a>
+				<a class="nav-item nav-link disabled col-md-3" href="#" tabindex="-1" aria-disabled="true" id="contact-bot">Contact</a>
+			</div>
+		</div>
+	</nav>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript">
+		(function() {
+			var $imgs = $('#gallery img');
+			var $buttons = $('#buttons');
+			var tagged = {};
+
+			$imgs.each(function() {
+				var img = this;
+				var tags = $(this).data('tags');
+
+				if (tags) {
+					tags.split(',').forEach(function(tagName) {
+						if (tagged[tagName] == null) {
+							tagged[tagName] = [];
+						}
+						tagged[tagName].push(img);
+					})
+				}
+			})
+
+			$('<button/>', {
+				text: 'Show All',
+				class: 'active',
+				click: function() {
+					$(this)
+					.addClass('active')
+					.siblings()
+					.removeClass('active');
+					$imgs.show();
+				}
+			}).appendTo($buttons);
+
+			$.each(tagged, function(tagName) {
+				var $n = $(tagged[tagName]).length;
+				$('<button/>', {
+					text: tagName + '(' + $n + ')',
+					click: function() {
+						$(this)
+						.addClass('active')
+						.siblings()
+						.removeClass('active');
+						$imgs
+						.hide()
+						.filter(tagged[tagName])
+						.show();
+					}
+				}).appendTo($buttons);
+			});
+		}())
+	</script>
+</body>
+</html>
